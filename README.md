@@ -6,5 +6,5 @@ Windows scoop
 
 from cmd.exe (admin)
 ```shell
-mklink C:\Users\(User)\scoop\apps\gimp\X.XX.XX-X\share\gimp\X.X\scripts\moza.scm (Any)\GIMP-Script-Fu\scripts\moza.scm
+mklink "%USERPROFILE%\scoop\apps\gimp\current\share\gimp\2.0\scripts\moza.scm" "(root of the repository)\scripts\moza.scm"
 ```
