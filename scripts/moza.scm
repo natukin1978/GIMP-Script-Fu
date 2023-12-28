@@ -16,8 +16,7 @@
 (define (save-and-close-image image drawable)
   (let* ((filename (car (gimp-image-get-filename image))))
     (gimp-file-save RUN-NONINTERACTIVE image drawable filename filename)
-    (gimp-image-clean-all image)
-    (gimp-image-delete image)))
+    (gimp-image-clean-all image)))
 
 (define (apply-effects image drawable)
   (gimp-image-undo-group-start image)
